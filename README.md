@@ -14,8 +14,6 @@
 
 ## 效果预览
 
-> 预览截图请放到以下路径，上传到 GitHub 后即可在 README 中显示。
-
 ![Sticky Stacked Cards Preview](docs/screenshots/sticky-stacked-cards-preview.png)
 
 ---
