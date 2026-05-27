@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Stack Cards Middle Section Demo</title>
+  <meta name="description" content="将错层滚动堆叠卡片放在页面中间的完整示例" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main>
+    <section class="page-section page-section--intro">
+      <div class="container split-section">
+        <div class="split-section__text">
+          <span class="section-badge">Before Stack Section</span>
+          <h1>页面上方普通内容区</h1>
+          <p>
+            这一块模拟真实页面中堆叠卡片前面的内容。向下滚动后，
+            会进入中间的 Sticky Stack Cards 区域，卡片会开始一张张吸附并错层堆叠。
+          </p>
+        </div>
+        <div class="intro-panel" aria-hidden="true">
+          <div class="intro-panel__line intro-panel__line--wide"></div>
+          <div class="intro-panel__line"></div>
+          <div class="intro-panel__grid">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--stack stack-section">
+      <div class="container section-heading">
+        <span class="section-badge">Middle Stack Section</span>
+        <h2>滚动堆叠卡片区域</h2>
+        <p>
+          这整个模块已经被放进一个独立的 section 中。继续向下滚动时，
+          卡片会在这个 section 内部完成吸附、覆盖和错层；离开这个 section 后，页面会正常进入下方内容区。
+        </p>
+      </div>
+
+      <div class="container stack-list">
+        <article class="stack-card" style="--stack-offset: 0px; --stack-offset-sm: 0px; --z: 10; --accent: #5a2cff;">
+          <div class="stack-card__content">
+            <div class="stack-card__text">
+              <span class="stack-card__tag">Section 01</span>
+              <h2>Faster Page Building</h2>
+              <p>
+                使用粘性定位让当前卡片在滚动到指定位置后停留，
+                后续卡片继续向上滚动并覆盖到它之上，从而形成层叠效果。
+              </p>
+              <ul class="stack-card__points">
+                <li>基于 <code>position: sticky</code></li>
+                <li>通过 <code>top</code> 控制错层间距</li>
+                <li>通过 <code>z-index</code> 强化覆盖关系</li>
+              </ul>
+            </div>
+            <div class="stack-card__media">
+              <img src="assets/images/placeholder-1.svg" alt="示意图 1" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <article class="stack-card" style="--stack-offset: 18px; --stack-offset-sm: 12px; --z: 11; --accent: #7a3cff;">
+          <div class="stack-card__content">
+            <div class="stack-card__text">
+              <span class="stack-card__tag">Section 02</span>
+              <h2>Automate Recurring Tasks</h2>
+              <p>
+                每张卡片都保留在正常文档流中，所以向上滚动时不会突兀，
+                而是自然地一张张从顶部“解叠”并展开。
+              </p>
+              <ul class="stack-card__points">
+                <li>视觉连贯，交互自然</li>
+                <li>无需复杂动画库即可实现</li>
+                <li>适合功能模块、案例展示、产品优势介绍</li>
+              </ul>
+            </div>
+            <div class="stack-card__media">
+              <img src="assets/images/placeholder-2.svg" alt="示意图 2" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <article class="stack-card" style="--stack-offset: 36px; --stack-offset-sm: 24px; --z: 12; --accent: #8e44ff;">
+          <div class="stack-card__content">
+            <div class="stack-card__text">
+              <span class="stack-card__tag">Section 03</span>
+              <h2>Layered Visual Storytelling</h2>
+              <p>
+                通过给每张卡片设置一个轻微递增的顶部停靠值，
+                可以保留前一张卡片的部分边缘，增强“错层感”。
+              </p>
+              <ul class="stack-card__points">
+                <li>更强的空间层次感</li>
+                <li>前卡片边缘会被保留出来</li>
+                <li>适合高端感页面表现</li>
+              </ul>
+            </div>
+            <div class="stack-card__media">
+              <img src="assets/images/placeholder-3.svg" alt="示意图 3" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <article class="stack-card" style="--stack-offset: 54px; --stack-offset-sm: 36px; --z: 13; --accent: #a855f7;">
+          <div class="stack-card__content">
+            <div class="stack-card__text">
+              <span class="stack-card__tag">Section 04</span>
+              <h2>Responsive by Default</h2>
+              <p>
+                电脑端采用图文左右布局，移动端自动切换为上下结构，
+                让卡片内容更易阅读，同时保留堆叠的滚动体验。
+              </p>
+              <ul class="stack-card__points">
+                <li>桌面端双栏布局</li>
+                <li>移动端图片自动换到上方</li>
+                <li>目录结构分离，便于后续项目接入</li>
+              </ul>
+            </div>
+            <div class="stack-card__media">
+              <img src="assets/images/placeholder-4.svg" alt="示意图 4" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <div class="stack-bottom-spacer" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--outro">
+      <div class="container split-section split-section--reverse">
+        <div class="split-section__text">
+          <span class="section-badge">After Stack Section</span>
+          <h2>页面下方普通内容区</h2>
+          <p>
+            当你滚动到这里时，说明中间的堆叠卡片区域已经结束。
+            再向上滚动时，卡片会从底部 section 返回到中间 section，并依次展开。
+          </p>
+        </div>
+        <div class="outro-panel" aria-hidden="true">
+          <div class="outro-panel__circle"></div>
+          <div class="outro-panel__card"></div>
+          <div class="outro-panel__card outro-panel__card--small"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

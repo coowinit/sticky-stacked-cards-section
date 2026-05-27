@@ -1,0 +1,28 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="960" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8CCBC"/>
+      <stop offset="1" stop-color="#D7B39F"/>
+    </linearGradient>
+    <filter id="noise1" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0 0 0.06"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="960" height="640" rx="32" fill="url(#bg1)"/>
+  <rect width="960" height="640" rx="32" filter="url(#noise1)" opacity="0.35"/>
+  <rect x="58" y="76" width="178" height="16" rx="8" fill="#F5E8DF" opacity="0.8"/>
+  <text x="58" y="178" fill="#FFF8F4" font-size="74" font-weight="700" font-family="Inter, Arial, sans-serif">Rejuvenated</text>
+  <text x="58" y="268" fill="#FFF8F4" font-size="74" font-weight="700" font-family="Inter, Arial, sans-serif">Body &amp; Soul</text>
+  <rect x="58" y="318" width="320" height="12" rx="6" fill="#F3E7DD" opacity="0.7"/>
+  <rect x="58" y="342" width="260" height="12" rx="6" fill="#F3E7DD" opacity="0.55"/>
+  <rect x="58" y="392" width="182" height="36" rx="18" fill="#FFFFFF"/>
+  <text x="88" y="416" fill="#B28372" font-size="16" font-weight="700" font-family="Inter, Arial, sans-serif">BOOK AN APPOINTMENT</text>
+  <circle cx="768" cy="238" r="112" fill="#F6DCD0"/>
+  <path d="M704 224C704 180 739 145 783 145C827 145 862 180 862 224V323H704V224Z" fill="#FCEFE8"/>
+  <path d="M730 182C730 154 752 132 780 132C808 132 830 154 830 182V210H730V182Z" fill="#4D362B" opacity="0.85"/>
+  <path d="M708 315C727 293 753 282 783 282C813 282 839 293 858 315V355H708V315Z" fill="#FCEFE8"/>
+</svg>
